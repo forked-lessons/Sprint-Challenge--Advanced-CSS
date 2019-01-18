@@ -33,14 +33,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
-1
+
+    An adaptive website will detect your device and will change depending on your device. It could have several layouts built for different devices. A fully responsive site can include different layouts at different sizes, but will also respond well to any screen size. Responsive design is better because your site will respond better to any size screen and you will not have to change as much when new tech with an abnormal screen size is released.
+
 2. Describe what it means to be mobile first vs desktop first.
 
+    Mobile first is a design principle that many people use to describe designing a mobile layout and then writing media queries using (min-width)
+    to respond to screen sizes found on larger devices like computers. The idea is that many sites are primarily viewed on mobile so the primary design should be mobile.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    By making html font-size: 62.5% we are able to make 1rem unit = 10px. This allows us to set more relative fonts and allows us to make our font sizes respond to the setting of the user. So if the user prefers a large font they can change that in their browser settings and we can now design our page to respond to that instead of hard coded pixels. rem sizes are relative to the root and em is relative to the container it is in. 
 
 4. How would you describe preprocessing to someone new to CSS?
+    
+    A CSS preprocessor compiles the styling you write into a CSS file. This allows you to do things like declare variables and add mixins to your code. An example would be you could declare a background and text color for your site in one place and always reference that variable anywhere you need it. Then when you do need to change these colors or variables you can do it in one spot and your entire site will update based on that. This allows us to make quick design changes in several spots that would be much harder with regular CSS. We can also create a mixin which we can create something like a button and then whenever we need that button we can just call for that button style and proceed to edit it as we need for that instance.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept is nested media queries. This has helped keep my code more organized and I will always know where to find an element I need to edit. What gives me the most trouble is this nesting as well. Sometimes is you nest things too deep it can be challenging to edit something because you may have originally coded it with too much specificity.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -100,7 +110,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [X] Add a viewport meta tag to the head of your index.html page
 
-* [X] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [X] Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
 * [X] Navigation Styles: Use the `navigation.less` file for styling.
 
