@@ -2,6 +2,9 @@
   display: flex;
   justify-content: center;
 }
+.mobile-size {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
