@@ -3,11 +3,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 2%;
+    padding-bottom: 0;
     background-color: @wild-sand;
     border-bottom: 1px solid @nav-border;
-
-
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: .6;
+    
     h1 {
         padding: 1% 0;
     }
@@ -15,11 +19,17 @@
         width: 100%;
         .center-justify;
 
+
     a {
         padding: 0 3%;
         text-decoration: none;
         font-size: 1.6rem;
         color: @river-bend;
-        }
+    }    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+        
     }
 }
