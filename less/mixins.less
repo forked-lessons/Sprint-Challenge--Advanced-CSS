@@ -4,3 +4,22 @@
     display: flex;
     justify-content: center;
 }
+
+
+.button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+    border-radius: 10px;
+    .center-justify;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    cursor: pointer;
+    font-size: @font-size;
+    border: none;
+  
+   
+    &:hover {
+      background: @font-color;
+      color: @bg-color;
+    }
+  }
